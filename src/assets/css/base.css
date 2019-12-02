@@ -1,0 +1,15 @@
+@import './normalize.css';
+
+/* :root -> 获取根元素html */
+:root {
+  --color-text: #666;
+}
+
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--color-text);
+}
