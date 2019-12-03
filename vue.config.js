@@ -8,6 +8,14 @@ module.exports = {
         'network': '@/network',
         'views': '@/views'
       }
-    }
+    },
+    // module: [{
+    //   test: /\.less$|\.stylus/,
+    //   use: [{
+    //     loader: "less-loader"
+    //   }, {
+    //     loader: "stylus-loader"
+    //   }]
+    // }]
   }
 }
