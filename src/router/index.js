@@ -9,7 +9,7 @@ const page404 = () => import('views/404')
 Vue.use(VueRouter)
 
 // 创建router
-const routers = [
+const routes = [
   {
     path: '/',
     redirect: '/home'
@@ -28,7 +28,7 @@ const routers = [
   },
 ]
 const router = new VueRouter({
-  routers,
+  routes,
   mode: 'history'
 })
 
