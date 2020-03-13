@@ -17,5 +17,8 @@ module.exports = {
     //     loader: "stylus-loader"
     //   }]
     // }]
+    devServer: {
+      port: 8761
+    }
   }
 }
