@@ -1,14 +1,17 @@
 <template>
-  <div>category</div>
+ <div>login</div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {};
+  data () {
+    return {
+    }
   }
-};
+}
+
 </script>
 
 <style scoped>
+
 </style>

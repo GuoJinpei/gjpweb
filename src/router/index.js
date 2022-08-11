@@ -1,30 +1,17 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-const Home = () => import('views/home')
-const Category = () => import('views/category')
-const page404 = () => import('views/404')
+import Home from './home'
+import Login from './login'
 
-// 1.安装插件
 Vue.use(VueRouter)
 
-// 创建router
 const routes = [
-  {
-    path: '/',
-    redirect: '/home'
-  },
-  {
-    path: '/home',
-    component: Home
-  },
-  {
-    path: '/category',
-    component: Category
-  },
+  ...home,
+  ...Login,
   {
     path: '*',
-    component: page404
+    component: () => import('@/views/404')
   },
 ]
 const router = new VueRouter({
